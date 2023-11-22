@@ -51,8 +51,8 @@ ChatCompletionsOptions completionsOptions = new() {
     DeploymentName = "gpt-35-turbo"
 };
 
-completionOptions.Messages.Add(new ChatMessage(ChatRole.System, "you are a helpful tax accountant and want to lower everybody's taxes."));
-completionOptions.Messages.Add(new ChatMessage(ChatRole.User, "hi there"));
+completionsOptions.Messages.Add(new ChatMessage(ChatRole.System, "you are a helpful tax accountant and want to lower everybody's taxes."));
+completionsOptions.Messages.Add(new ChatMessage(ChatRole.User, "hi there"));
 
 var response = await openAIClient.GetChatCompletionsAsync(completionOptions);
 ```
